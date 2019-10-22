@@ -11,6 +11,8 @@ import gc #THIS IS GARBAGE COLLECTOR
 # %% [code]
 #All data file paths on kaggle start with the root dir
 #root dir is ../input
+
+#Chnage the train and test directory path according to your dataset path.
 train_dir='../input/dogs-vs-cats-redux-kernels-edition/train'
 test_dir='../input/dogs-vs-cats-redux-kernels-edition/test'
 train_dogs=['../input/dogs-vs-cats-redux-kernels-edition/train/{}'.format(i) for i in os.listdir(train_dir) if 'dog' in i]
