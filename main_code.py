@@ -78,6 +78,7 @@ conv_base=InceptionResNetV2(weights='imagenet',include_top=False,input_shape=(15
 # %% [code]
 conv_base.summary()
 
+#####################################TRANSFER LEARNING#################################################################
 # %% [code]
 from keras import layers
 from keras import models
@@ -146,7 +147,9 @@ for batch in test_IDG.flow(x,batch_size=1):
     if(i%10==0):
         break
 plt.show()
+#######################################################END################################################################
 
+######################################################VGG Architecture####################################################
 # %% [code]
 #Keras is an open source neural network library
 batch_size=32
